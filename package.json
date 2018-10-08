@@ -1,13 +1,16 @@
 {
-
   "name": "monday",
   "version": "1.0.0",
   "description": "packages",
+  "engines": {
+    "node": "8.11.2"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
     "build": "echo \"BUILD OK\" && exit 0",
-    "prebuild": "npm run test"
+    "prebuild": "npm run test",
+    "version": "node version-check.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/michaeloharaa/monday/issues"
   },
-  "homepage": "https://github.com/michaeloharaa/monday#readme"
+  "homepage": "https://github.com/michaeloharaa/monday#readme",
+  "devDependencies": {
+    "semver": "^5.5.1"
+  }
 }
